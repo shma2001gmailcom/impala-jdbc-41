@@ -176,7 +176,7 @@
             <id>local-repo</id>
             <name>Example Repository</name>
             <!-- replace with yours-->
-            <url>file:///home/misha/.m2/repository</url>
+            <url>file:///<home/mishevelin>/.m2/repository</url>
         </repository>
     </repositories>
 </project>
