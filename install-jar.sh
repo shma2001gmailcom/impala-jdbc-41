@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-#install ImpalaJDBC41.jarr to local maven repo
+#install ImpalaJDBC41.jar to local maven repo
 
 file=./src/main/resources/ImpalaJDBC41.jar
 group=Impala
