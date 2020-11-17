@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
 
@@ -39,7 +40,7 @@ public class Launcher {
         System.out.println("\n========================\n");
         System.out.println("connection url: " + connectionUrl);
         System.out.println("query: " + sqlStatement);
-        Class.forName(jdbcDriverName);
+        System.err.println("\n\nclass " + Class.forName(jdbcDriverName).getCanonicalName() + " loaded successfully");
         try (Connection con = DriverManager.getConnection(connectionUrl);
              Statement stmt = con.createStatement();
              ResultSet rs = stmt.executeQuery(sqlStatement)
@@ -49,8 +50,8 @@ public class Launcher {
                 System.out.println(rs.getString(1));
             }
             System.out.println("=======================\n\n");
-        } catch (Exception e) {
-            System.err.println(e.getMessage());
+        } catch (SQLException e) {
+            System.err.println();
         }
     }
 }
