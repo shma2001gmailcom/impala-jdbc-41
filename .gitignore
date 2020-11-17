@@ -1,0 +1,14 @@
+target/
+.DS_Store
+._.DS_Store
+.AppleDouble
+.LSOverride
+
+
+
+
+
+# IntelliJ
+.idea
+
+
