@@ -26,7 +26,7 @@ public class Launcher {
     }
 
     private static InputStream propsStream() {
-        return Launcher.class.getClassLoader().getResourceAsStream("application.properties");
+        return Launcher.class.getClassLoader().getResourceAsStream("application.propertiess");
     }
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {

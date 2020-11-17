@@ -1,0 +1,4 @@
+connection.url=jdbc:impala://127.0.0.1:21050/default2;AuthMech=3;UID=impala;PWD=cloudera
+jdbc.driver.class.name=com.cloudera.impala.jdbc41.Driver
+
+
